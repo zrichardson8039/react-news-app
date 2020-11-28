@@ -9,7 +9,11 @@ export const ArticleList = () => {
   const articles = useSelector(state => state.articles.data);
   const articleCards = articles.map(article => {
     return (
-      <Col xs='12' md='6' xl='4' key={article.url} className="my-3 d-flex align-items-stretch">
+      <Col
+        className="my-3 d-flex align-items-stretch"
+        xs='12' md='6' xl='4'
+        key={article.url}
+      >
         <ArticleCard article={article} />
       </Col>
     );
