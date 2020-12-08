@@ -15,7 +15,7 @@ export const ArticleCard = ({ article }) => {
       />
       <Card.Body>
         <Card.Title>{article.title}</Card.Title>
-        <Card.Text>{article.description.substring(0, 100)}...</Card.Text>
+        <Card.Text>{article.description && article.description.substring(0, 100)}...</Card.Text>
         <Button variant="dark" onClick={handleClick}>Read More</Button>
       </Card.Body>
     </Card>
