@@ -7,7 +7,7 @@ import { ArticleSearchBar } from './features/articles/ArticleSearchBar';
 
 function App() {
   return (
-    <Container fluid className="min-vh-100 bg-light">
+    <Container fluid className="min-vh-100 bg-dark">
       <ArticleSearchBar />
       <ArticleList />
     </Container>
